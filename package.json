@@ -1,0 +1,12 @@
+{
+  "name": "framework-easypdk",
+  "version": "0.0.1",
+  "description": "Easy PDK Framework for Padauk Microcontrollers",
+  "keywords": [
+    "framework",
+    "pdk13",
+    "pdk14",
+    "pdk15"
+  ],
+  "homepage": "https://free-pdk.github.io/"
+}
