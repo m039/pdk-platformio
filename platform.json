@@ -34,7 +34,7 @@
     },
     "tool-easypdkprog": {
       "type": "uploader",
-      "version": "https://github.com/m039/pdk-playground.git#platformio-tool-easypdkprog-windows_x86_64.git"
+      "version": "https://github.com/m039/pdk-playground.git#platformio-tool-easypdkprog-windows_x86_64"
     }
   }
 }
