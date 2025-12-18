@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m039/platform-padauk.git"
+    "url": "https://github.com/m039/pdk-playground.git#platformio-platform"
   },
   "version": "0.0.1",
   "frameworks": {
@@ -25,16 +25,16 @@
   "packages": {
     "framework-easypdk": {
       "type": "framework",
-      "version": "https://github.com/m039/framework-easypdk.git"
+      "version": "https://github.com/m039/pdk-playground.git#platformio-framework"
     },
     "toolchain-sdcc": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "https://github.com/m039/toolchain-sdcc.git"
+      "version": "https://github.com/m039/pdk-playground.git#platformio-toolchain-sdcc"
     },
     "tool-easypdkprog": {
       "type": "uploader",
-      "version": "https://github.com/m039/tool-easypdkprog-windows_x86_64.git"
+      "version": "https://github.com/m039/pdk-playground.git#platformio-tool-easypdkprog-windows_x86_64.git"
     }
   }
 }
