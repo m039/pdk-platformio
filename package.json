@@ -1,0 +1,20 @@
+{
+  "name": "tool-easypdkprog",
+  "version": "1.3.0",
+  "description": "Easy PDK programmer for PADAUK microcontroller",
+  "keywords": [
+    "tools",
+    "uploader",
+    "free-pdk"
+  ],
+  "homepage": "https://free-pdk.github.io/",
+  "license": "GPL-3.0",
+  "system": [
+    "windows_x86",
+    "windows_amd64"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/free-pdk/easy-pdk-programmer-software"
+  }
+}
