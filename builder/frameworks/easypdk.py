@@ -31,6 +31,9 @@ env.Append(
         "--std-sdcc11",
         "--opt-code-size"
     ],
+    ASFLAGS=[
+        "-l",
+    ],
     CPPDEFINES=[
         "F_CPU=$BOARD_F_CPU",
         "TARGET_VDD_MV=$TARGET_VDD_MV",

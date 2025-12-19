@@ -26,10 +26,11 @@ def sizePrintCMD(target, source, env):
 env.Replace(
  #   AR="sdar",
     CC="sdcc",
+    AS="sdas%s" % board_config.get("build.cpu"),
     OBJCOPY="makebin",
     RANLIB="sdranlib",
     OBJSUFFIX=".rel",
-    SIZETOOL="cat",     # use cat to get content from map file for size calculations
+    SIZETOOL='python',     # use cat to get content from map file for size calculations
     TARGET_VDD_MV=round(1000*float(board_config.get("build.calibration_voltage"))), #get calibration voltage in mV
 
     # CFLAGS=[
@@ -52,7 +53,7 @@ env.Replace(
     BINFILE = join("$BUILD_DIR", "${PROGNAME}.bin"),
     MAPFILE = join("$BUILD_DIR", "${PROGNAME}.map"),
     #SIZECHECKCMD=['python', '-c', 'from os.path import getsize; print("CODE = %s" % getsize("${BINFILE}"))'],  # get flash size from bin file
-    SIZECHECKCMD=['${SIZETOOL}', '${MAPFILE}'],
+    SIZECHECKCMD=['${SIZETOOL}', '-c', 'import sys; print(open(sys.argv[1]).read())', '${MAPFILE}'],
     SIZEPROGREGEXP=r"^(?:CODE|GSINIT|GSFINAL|CONST|HOME|RSEG0|SSEG|HEADER1|HEADER3|PREG2)[^=]*\D+(\d+).*",
     SIZEDATAREGEXP=r"^(?:DATA)[^=]*\D+(\d+).*",
 
