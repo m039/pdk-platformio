@@ -41,9 +41,11 @@
 #define __stopexe()           __asm__("stopexe\nnop\n")
 #define __reset()             __asm__("reset\n")
 #define __wdreset()           __asm__("wdreset\n")
+#define __set0(var,bit)       __asm__("set0 "_STR_VAR(var)", #"_STR(bit)"\n")
+#define __set1(var,bit)       __asm__("set1 "_STR_VAR(var)", #"_STR(bit)"\n")
 
 // BIT definitions
-#define BIT0	               (1)
+#define BIT0	               (1<<0)
 #define BIT1	               (1<<1)
 #define BIT2	               (1<<2)
 #define BIT3	               (1<<3)
