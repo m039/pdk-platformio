@@ -6,7 +6,7 @@
 2. Create PlatformIO project and configure a platform option in [platformio.ini](http://docs.platformio.org/page/projectconf.html) file:
 
 ```ini
-[env:development]
+[env]
 platform = https://github.com/m039/pdk-platformio.git
 board = ...
 ...
