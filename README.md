@@ -9,7 +9,7 @@
 
 ```ini
 [env:development]
-platform = https://github.com/m039/pdk-playground.git#platformio-platform
+platform = https://github.com/m039/pdk-platformio.git
 board = ...
 ...
 ```
