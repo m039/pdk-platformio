@@ -13,6 +13,11 @@ platform = https://github.com/m039/pdk-platformio.git
 board = ...
 ...
 ```
+
+# Examples
+
+Examples are in [pdk-playground](https://github.com/m039/pdk-playground/tree/main) repository.
+
 # Acknowledgment
 
 This repository is a fork of 1500WK1500's [platform-padauk](https://github.com/1500WK1500/platform-padauk).
