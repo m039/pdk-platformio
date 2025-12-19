@@ -1,3 +1,5 @@
+Version: SDCC 4.2.0
+
 SDCC - free open source, retargettable, optimizing ISO C compiler
 ------------------------------------------------------------------
 
