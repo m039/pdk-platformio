@@ -37,6 +37,10 @@
 	#error "PFS172/PFS122/PFS121 needs the PDK14 backend. You must compile with the -mpdk14 option."
 #endif
 
+#if defined(PFS122) 
+#define __PDK_HAS_ADC_12BIT
+#endif
+
 #define ILRC_FREQ           55000
 
 // Factory Calibration address locations
@@ -87,6 +91,8 @@
 #define ADCC_ADDR           0x20
 #define ADCM_ADDR           0x21
 #define ADCR_ADDR           0x22
+#define ADCRH_ADDR          0x22
+#define ADCRL_ADDR          0x23
 //0x23
 //0x24
 //0x25
