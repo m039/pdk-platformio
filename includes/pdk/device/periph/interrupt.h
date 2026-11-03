@@ -87,12 +87,10 @@ __sfr __at(INTEGS_ADDR)       _integs;
 // INTRQ (Interrupt Request) register definitions
 #define INTRQ_PA0_BIT                0
 #define INTRQ_T16_BIT                2
-#define INTRQ_CMP_BIT                4
 #define INTRQ_TM2_BIT                6
 
 #define INTRQ_PA0                    (1 << INTRQ_PA0_BIT)
 #define INTRQ_T16                    (1 << INTRQ_T16_BIT)
-#define INTRQ_CMP                    (1 << INTRQ_CMP_BIT)
 #define INTRQ_TM2                    (1 << INTRQ_TM2_BIT)
 
 #if defined(__PDK_HAS_PORTB)
